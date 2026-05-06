@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=yes">
+  <title>HealthSync | Artikel</title>
+  <link rel="icon" type="image/webp" href="img/l1.webp">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="header">
+  <div class="logo">
+    <img src="img/l1.webp" alt="Logo" class="logo-img">
+    <span class="logo-text">HealthSync</span>
+  </div>
+  <button onclick="toggleTheme()" class="theme-btn" id="themeToggleBtn">🌙</button>
+</div>
+
+<div class="container">
+  <div class="glass-card">
+    <h2 style="margin-bottom: 8px;">📰 Artikel Kesehatan</h2>
+    <p style="margin-bottom: 24px; opacity: 0.7;">Tips dan informasi untuk hidup sehat</p>
+    
+    <div class="article-item" onclick="showArticleModal('Pola Makan Seimbang', '🥗 Konsumsilah makanan dengan gizi seimbang: karbohidrat, protein, lemak sehat, vitamin, dan mineral. Hindari makanan olahan dan perbanyak sayur serta buah-buahan segar.')">
+      <h3 style="color: var(--primary); margin-bottom: 4px;">🥗 Pola Makan Seimbang</h3>
+      <p style="font-size: 13px; opacity: 0.7;">Kunci hidup sehat dimulai dari piring makan Anda</p>
+    </div>
+    
+    <div class="article-item" onclick="showArticleModal('Olahraga Rutin', '🏃 Lakukan olahraga minimal 30 menit setiap hari. Jalan kaki, bersepeda, atau berenang adalah pilihan yang baik untuk memulai kesehatan Anda.')">
+      <h3 style="color: var(--primary); margin-bottom: 4px;">🏃 Olahraga Rutin</h3>
+      <p style="font-size: 13px; opacity: 0.7;">Gerakan teratur untuk tubuh yang bugar</p>
+    </div>
+    
+    <div class="article-item" onclick="showArticleModal('Tidur Cukup', '😴 Tidur 7-8 jam per hari membantu regenerasi sel dan menjaga kesehatan mental. Kurang tidur dapat memicu berbagai penyakit kronis.')">
+      <h3 style="color: var(--primary); margin-bottom: 4px;">😴 Tidur Cukup</h3>
+      <p style="font-size: 13px; opacity: 0.7;">Istirahat berkualitas untuk kesehatan optimal</p>
+    </div>
+    
+    <div class="article-item" onclick="showArticleModal('Manajemen Stres', '🧘 Stres berlebih dapat mempengaruhi kesehatan fisik dan mental. Coba meditasi, yoga, atau hobi yang menyenangkan untuk relaksasi.')">
+      <h3 style="color: var(--primary); margin-bottom: 4px;">🧘 Manajemen Stres</h3>
+      <p style="font-size: 13px; opacity: 0.7;">Jaga kesehatan mental dengan mengelola stres</p>
+    </div>
+    
+    <div class="article-item" onclick="showArticleModal('Minum Air Putih', '💧 Setidaknya 8 gelas air putih per hari membantu metabolisme dan menjaga hidrasi tubuh agar berfungsi optimal.')">
+      <h3 style="color: var(--primary); margin-bottom: 4px;">💧 Minum Air Putih</h3>
+      <p style="font-size: 13px; opacity: 0.7;">Hidrasi yang cukup untuk tubuh sehat</p>
+    </div>
+    
+    <div class="article-item" onclick="showArticleModal('Cek Kesehatan Rutin', '🏥 Periksakan kesehatan secara rutin setiap 6 bulan untuk deteksi dini penyakit. Pencegahan lebih baik daripada mengobati.')">
+      <h3 style="color: var(--primary); margin-bottom: 4px;">🏥 Cek Kesehatan Rutin</h3>
+      <p style="font-size: 13px; opacity: 0.7;">Deteksi dini untuk hidup lebih sehat</p>
+    </div>
+  </div>
+</div>
+
+<div class="bottom-nav">
+  <a href="index.html" class="nav-item"><span>🏠</span><span>Home</span></a>
+  <a href="kalkulator.html" class="nav-item"><span>🧮</span><span>Kalkulator</span></a>
+  <a href="riwayat.html" class="nav-item"><span>📊</span><span>Riwayat</span></a>
+  <a href="panduan.html" class="nav-item"><span>📖</span><span>Panduan</span></a>
+  <a href="artikel.html" class="nav-item active"><span>📰</span><span>Artikel</span></a>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
